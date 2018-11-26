@@ -7,6 +7,13 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+// Array.prototype.every
+// Array.prototype.some
+
+// Iterable == for-of loop
+
+function palindrome(str) {
+    return !(str.split('').some((char, i) => char !== str[str.length - i - 1]));
+}
 
 module.exports = palindrome;
